@@ -1,9 +1,5 @@
 #!/usr/bin/python3
-import sys
-
-def calculate_sum():
-    arguments = sys.argv[1:]
-    total = sum(int(arg) for arg in arguments)
-    print(total)
 if __name__ == "__main__":
-    calculate_sum()
+    import sys
+    result = sum(int(sys.argv[x]) for x in range(1, len(sys.argv)))
+    print("{}".format(result))
